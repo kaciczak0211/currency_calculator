@@ -1,0 +1,10 @@
+.list-item{
+    display: flex;
+    flex-direction: column;
+}
+
+.list-item:hover{
+    color: red;
+    text-decoration: line-through;
+    cursor: pointer;
+}
