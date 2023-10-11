@@ -169,3 +169,15 @@ parent.style.color = "pink";
 // console.log(grandParent);
 
 // grandParent.style.color = "green";
+
+let arrayCheck = [];
+
+if (arrayCheck.length === 0) {
+  console.log("empty");
+} else if (arrayCheck.length < 5) {
+  console.log("small");
+} else if (arrayCheck.length < 10) {
+  console.log("medium");
+} else {
+  console.log("large");
+}
