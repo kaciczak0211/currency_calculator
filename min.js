@@ -170,14 +170,78 @@ parent.style.color = "pink";
 
 // grandParent.style.color = "green";
 
-let arrayCheck = [];
+// let arrayCheck = [];
 
-if (arrayCheck.length === 0) {
-  console.log("empty");
-} else if (arrayCheck.length < 5) {
-  console.log("small");
-} else if (arrayCheck.length < 10) {
-  console.log("medium");
-} else {
-  console.log("large");
+// if (arrayCheck.length === 0) {
+//   console.log("empty");
+// } else if (arrayCheck.length < 5) {
+//   console.log("small");
+// } else if (arrayCheck.length < 10) {
+//   console.log("medium");
+// } else {
+//   console.log("large");
+// }
+
+// const number = 4;
+
+// switch (number) {
+//   case 0:
+//     console.log("it is zero");
+//     break;
+//   case 1:
+//   case 2:
+//     console.log("it is too small");
+//     break;
+//   case 3:
+//   case 4:
+//     console.log("it is medium");
+//     break;
+//   case 5:
+//     console.log("it is large");
+//     break;
+//   default:
+//     console.log("try again");
+// }
+
+// for (let i = 0; i < 6; i++) {
+//   console.log("essa");
+// }
+
+// let aaa = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// for (i = 0; i < aaa.length; i++) {
+//   let newAa = aaa[i];
+//   if (newAa === 5) break;
+//   console.log(newAa);
+// }
+
+// let i = 0;
+
+// while (i < 5) {
+//   console.log(i);
+//   i++;
+// }
+
+function sumTen(number) {
+  if (number <= 0) return 0;
+  return number + sumTen(number - 1);
 }
+
+console.log(sumTen(10));
+
+const person = {
+  bla: "kyle",
+  friend: {
+    bla: "Joe",
+    friend: {
+      bla: "Sally",
+    },
+  },
+};
+
+function printName(currentPerson) {
+  if (currentPerson == null) return;
+  console.log(currentPerson.bla);
+  printName(currentPerson.friend);
+}
+printName(person);
