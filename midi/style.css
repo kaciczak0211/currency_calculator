@@ -1,0 +1,34 @@
+*{
+    background-color: rgb(44, 44, 255);
+
+}
+
+.main-con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.piano{
+    width: 75vh;
+    height: 30vh;
+    background-color: black;
+    display: flex;
+    border: 10px solid rgb(146, 146, 146);
+}
+
+.key-white{
+    background-color: white;
+    width: 6.25vh;
+    border: 1px solid black;
+    font-size: 26px;
+}
+
+.key-black{
+    background-color: black;
+    width: 6.25vh;
+    color: white;
+    font-size: 26px;
+}
